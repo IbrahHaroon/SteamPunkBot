@@ -1,0 +1,138 @@
+.chat {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.chat .overlap-group-wrapper {
+  background-color: #ffffff;
+  width: 1440px;
+  height: 1024px;
+}
+
+.chat .overlap-group {
+  position: relative;
+  height: 1024px;
+  background-image: url(./../pictures/Blurry.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+
+
+.chat .text-wrapper {
+  position: absolute;
+  width: 123px;
+  top: 721px;
+  left: 371px;
+  font-family: "ADLaM Display-Regular", Helvetica;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.chat .image {
+  position: absolute;
+  width: 245px;
+  height: 242px;
+  top: 23px;
+  left: 1170px;
+  object-fit: cover;
+}
+
+.chat .component {
+    position: absolute;
+    width: 236px;
+    height: 139px;
+    top: 864px;
+    left: 57px;
+    background-image: url(./../pictures/back_button.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    cursor: pointer; /* Change cursor to pointer for better UX */
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for effects */
+  }
+
+  .chat .BACK {
+    position: absolute;
+    width: 113px;
+    height: 44px;
+    top: 48px;
+    left: 63px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for the image */
+  }
+  
+  /* Hover effect for the back button */
+  .chat .component:hover {
+    transform: scale(1.05); /* Slightly enlarge the button */
+    opacity: 0.9; /* Slightly fade the button */
+  }
+  
+
+  .chat .rectangle {
+    position: absolute;
+    width: 673px;
+    height: 39px;
+    top: 756px;
+    left: 362px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center contents */
+  }
+  
+  /* Style for the mini line */
+  .chat .mini-line {
+    width: 100%; /* Full width of the rectangle */
+    height: 2px; /* Height of the mini line */
+    background-color: #000000; /* Color of the line */
+    margin-top: 5px; /* Space between the top of the rectangle and the line */
+  }
+  
+  /* Style for the blurry message */
+  .chat .blurry-message {
+    color: rgba(21, 19, 19, 0.7); /* Blurry effect using rgba for transparency */
+    font-size: 14px; /* Font size for the message */
+    text-align: center; /* Center align the text */
+    position: absolute; /* Positioning inside the rectangle */
+    top: 8px; /* Adjust vertical position */
+    left: 50%; /* Center horizontally */
+    transform: translateX(50%); /* Centering adjustment */
+  }
+  
+
+  .chat .rectangle {
+    position: absolute;
+    width: 673px;
+    height: 39px;
+    top: 756px;
+    left: 362px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    display: flex;
+    align-items: center; /* Center the input field vertically */
+    padding: 0 10px; /* Add padding to the sides */
+  }
+  
+  .chat .input-field {
+    width: 100%; /* Full width of the rectangle */
+    height: 100%; /* Full height of the rectangle */
+    border: none; /* Remove default border */
+    outline: none; /* Remove focus outline */
+    background: transparent; /* Make background transparent */
+    color: #000; /* Text color */
+    font-size: 16px; /* Font size */
+    font-family: "ADLaM Display-Regular", Helvetica; /* Ensure it matches other text */
+  }
+  
+  /* Placeholder text style */
+  .chat .input-field::placeholder {
+    color: rgba(0, 0, 0, 0.5); /* Blurry effect for placeholder */
+  }
+  

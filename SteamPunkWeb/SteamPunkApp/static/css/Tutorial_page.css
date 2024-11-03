@@ -1,0 +1,89 @@
+.turorial-page {
+    background-color: #c4c4c4;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.turorial-page .overlap-group-wrapper {
+    background-color: #c4c4c4;
+    width: 1440px;
+    height: 1024px;
+}
+
+.turorial-page .overlap-group {
+    position: relative;
+    height: 1024px;
+    background-image: url(./../pictures/Blurry.png);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.turorial-page .overlap {
+    position: absolute;
+    width: 1380px;
+    height: 813px;
+    top: 32px;
+    left: 30px;
+    background-image: url(./../pictures/frame.png);
+    background-size: 100% 100%;
+    transform: rotate(180deg); /* Rotate the frame */
+    transform-origin: center; /* Rotate around center */
+}
+
+.turorial-page .rotated-content {
+    position: absolute;
+    top: 70px; /* Adjust as needed */
+    left: 50px; /* Adjust as needed */
+    transform: rotate(180deg); /* Rotate the text and image */
+    transform-origin: center; /* Rotate around center */
+}
+
+.turorial-page .to-use-the-steampunk {
+    width: 833px;
+    height: 489px;
+    /* Remove absolute positioning here */
+}
+
+.turorial-page .user-guide-how-to {
+    width: 1011px;
+    font-family: "ADLaM Display", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: normal;
+}
+
+/* Existing styles for the component */
+.turorial-page .component {
+    position: absolute;
+    width: 334px;
+    height: 124px;
+    top: 887px; /* Adjust as needed */
+    left: 30px; /* Adjust as needed */
+    background-image: url(./../pictures/back_button.png);
+    background-size: 100% 100%;
+    cursor: pointer; /* Change cursor to pointer for better UX */
+    transition: transform 0.3s, opacity 0.3s; /* Add transition for effects */
+}
+
+/* Hover effect for the back button */
+.turorial-page .component:hover {
+    transform: scale(1.05); /* Slightly enlarge the button */
+    opacity: 0.9; /* Slightly fade the button */
+}
+.turorial-page .BACK {
+    position: absolute;
+    width: 113px;
+    height: 44px;
+    top: 44px; /* Adjust as needed */
+    left: 112px; /* Adjust as needed */
+}
+
+.turorial-page .component a {
+    display: block; /* Make the anchor fill the component area */
+    width: 100%;
+    height: 100%;
+}

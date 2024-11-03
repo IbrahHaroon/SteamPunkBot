@@ -1,0 +1,35 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Send the video behind other content */
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the screen */
+}
+
+.transition-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff; /* Adjust text color for visibility */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional text shadow for readability */
+}
+
+.transition-container h1 {
+    font-size: 48px;
+}
