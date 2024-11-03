@@ -65,6 +65,18 @@
   left: 130px;
 }
 
+/* New image styling */
+/* New image styling */
+.about-page .new-image {
+  position: absolute;
+  width: 1224px; /* Adjust width as needed */
+  height: 204px; /* Maintain aspect ratio */
+  top: 110px; /* Position it below the "about" image */
+  left: 50%; /* Position it in the middle of the screen */
+  transform: translateX(-50%); /* Center it by adjusting for its width */
+}
+
+
 .about-page .img {
   top: 84px;
   position: absolute;
@@ -90,7 +102,7 @@
   object-fit: cover;
 }
 
-.about-page .image-3 {
+.about-page .image33 {
   position: absolute;
   width: 264px;
   height: 247px;
