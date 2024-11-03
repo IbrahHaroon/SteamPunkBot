@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/SteamPunkBot/SteamPunkWeb/SteamPunkApp/static/css/transition_page.css">
+    <link rel="stylesheet" href="/SteamPunkWeb/SteamPunkApp/static/css/transition_page.css">
     <title>Transitioning...</title>
 </head>
 <body>
     <div class="video-background">
         <video autoplay muted loop>
-            <source src="/SteamPunkBot/SteamPunkWeb/SteamPunkApp/static/pictures/gears.mp4" type="video/mp4">
+            <source src="/SteamPunkWeb/SteamPunkApp/static/pictures/gears.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
@@ -25,7 +25,7 @@
         }
 
         const params = new URLSearchParams(window.location.search);
-        const targetPage = params.get('target') || '/SteamPunkBot/SteamPunkWeb/SteamPunkApp/templates/welcome_page.html';
+        const targetPage = params.get('target') || '/SteamPunkWeb/SteamPunkApp/templates/welcome_page.html';
         redirectTo(targetPage);
     </script>
 </body>
